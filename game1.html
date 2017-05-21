@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8" /> 
+
+<html>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="game1.js"></script>
+
+	<body id="bdy">
+   <script>
+  $(function() {
+	  document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+  });
+  </script>
+		<div id="descri-sec">
+            <p>在溪松〈封神榜裡的哪吒〉，哪吒因為心殘，造成了許多殺業。</p>
+            <p>以下那些是在文中提及慘遭殺害的動物或人物？</p>
+            <p><strong>遊戲規則：限時15秒，點選開始遊戲進行作答。</strong></p>
+		</div>
+        
+        <div id="div_bt_start">
+        	<button id="bt_start" type="button" class="button" onclick="func_bt_start()">開始遊戲</button>
+        </div>
+        <div id="main-sec">
+			<div id="timerCount">
+            	16
+            </div>
+            <div id="div_completed" style="align:center;">
+            	<!--<img id="img_pass" draggable="false" src="image/game1/thumbs-up.png" style="visibility:hidden;height:30px;width:30px;">-->
+            <button id="bt_replay" type="button" class="button" onclick="func_bt_replay()" style="display:none;position:fixed;margin-right:-50px;">重玩遊戲</button>
+            </div>
+            <div id="mainGame" style="align:center;">
+            <table align="center">
+            	<tr>
+                	<th><img id="img5" draggable="false"  src="image/game1/lwaoguang.png" onClick="img5_check()" onmouseover="msoverimg5()" onmouseout="msoutimg5()"style="width:200px;height:150px;"></th>
+                    <th><img id="img6" draggable="false"  src="image/game1/daozhang.png" onClick="img6_check()" onmouseover="msoverimg6()" onmouseout="msoutimg6()"style="width:200px;height:150px;"></th>
+                    <th><img id="img7" draggable="false"  src="image/game1/nzfm.png" onClick="img7_check()" onmouseover="msoverimg7()" onmouseout="msoutimg7()"style="width:200px;height:150px;"></th>
+                </tr>
+            <table align="center">
+            	<tr>
+                	<th><img id="img1" draggable="false" onClick="img1_check()"	onmouseover="msoverimg1()" onmouseout="msoutimg1()" src="image/game1/shaonian.png" 				style="width:200px;height:150px;"></th>
+                    <th><img id="img2" draggable="false" onClick="img2_check()"	onmouseover="msoverimg2()" onmouseout="msoutimg2()" src="image/game1/simang.png" 			style="width:200px;height:150px;"></th>
+                    <th><img id="img3" draggable="false" onClick="img3_check()"	onmouseover="msoverimg3()" onmouseout="msoutimg3()" src="image/game1/lwerzi.png" 	style="width:200px;height:150px;"></th>
+                    <th><img id="img4" draggable="false" onClick="img4_check()"	onmouseover="msoverimg4()" onmouseout="msoutimg4()" src="image/game1/yqns.png" 		style="width:200px;height:150px;"></th>
+                </tr>
+            </table>
+            </div>
+        </div>
+        
+	</body>
+</html>

@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8" /> 
+
+<html id>
+<link rel="stylesheet" type="text/css" href="gm2_style.css" media="screen" />
+<script type="text/javascript" src="game2.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+
+	<body id="bdy">
+   <script>
+  $(function() {
+	  document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+  });
+  </script>
+		<div id="descri-sec">
+        	<p>遊戲規則：</p>
+			<p>1.請同學熟讀課本選文－－楊牧《又是風起的時候》</p>
+			<p><strong>2.場遊戲限時90秒。</strong></p>
+			<p>3.遊戲開始後，大樹會飄落葉子，葉子上印有文字，皆是課文中出現過的場景與作者心境。依照作者所描述事物的時間點，使用鼠標拖曳葉子分別投入「現實」與「大學」的籃子裡，投對一題得累計積分1分。</p>
+		</div>
+        
+        <div id="div_bt_start">
+        	<button id="bt_start" type="button" class="button" onclick="func_bt_start()">開始遊戲</button>
+        </div>
+        <div id="main-sec">
+        <table align="center">
+        	<tr>
+            	<th><div id="score_show">得分： 0 </div></th>
+				<th><div id="timerCount">91秒</div></th>
+            </tr>
+        </table>
+            <div id="div_completed" style="align:center;">
+            <button id="bt_replay" type="button" class="button" onclick="func_bt_replay()"style="display:none;position:fixed;margin-left:420px;">重玩遊戲</button>
+            </div>
+            <div id="mainGame2">
+                <img id="basket_reality"draggable="false" src="image/game2/basket_reality.png"style="margin-left:0px;">
+            	<img id="basket_school" draggable="false" src="image/game2/basket_school.png"style="margin-left:780px;">
+            
+            	<img id="lfa1"	class="drag-reality"src="image/game2/lfa1.png" style="margin-left:350px;margin-top:100px;">
+                <img id="lfb6"	class="drag-school"src="image/game2/lfb6.png" style="margin-left:450px;margin-top:50px;"">
+                <img id="lfb5"	class="drag-school"src="image/game2/lfb5.png" style="margin-left:550px;margin-top:80px;"">
+                <img id="lfb10"	class="drag-school"src="image/game2/lfb10.png" style="margin-left:370px;margin-top:120px;"">
+                <img id="lfb4"	class="drag-school"src="image/game2/lfb4.png" style="margin-left:470px;margin-top:150px;"">
+                <img id="lfa2"	class="drag-reality"src="image/game2/lfa2.png" style="margin-left:570px;margin-top:130px;"">
+                <img id="lfa5"	class="drag-reality"src="image/game2/lfa5.png" style="margin-left:270px;margin-top:90px;"">
+                <img id="lfb3"	class="drag-school"src="image/game2/lfb3.png" style="margin-left:250px;margin-top:95px;"">
+                <img id="lfb8"	class="drag-school"src="image/game2/lfb8.png" style="margin-left:350px;margin-top:100px;"">
+                <img id="lfb2"	class="drag-school"src="image/game2/lfb2.png" style="margin-left:370px;margin-top:50px;"">
+                <img id="lfa3"	class="drag-reality"src="image/game2/lfa3.png" style="margin-left:280px;margin-top:80px;"">
+                <img id="lfb7"	class="drag-school"src="image/game2/lfb7.png" style="margin-left:350px;margin-top:90px;"">
+                <img id="lfb1"	class="drag-school"src="image/game2/lfb1.png" style="margin-left:450px;margin-top:80px;"">
+                <img id="lfa4"	class="drag-reality"src="image/game2/lfa4.png" style="margin-left:550px;margin-top:130px;"">
+                <img id="lfb9"	class="drag-school"src="image/game2/lfb9.png" style="margin-left:370px;margin-top:120px;"">
+            <!--<table align="center">
+            	<tr>
+                	<th><img id="lfa1"	class="drag-reality"	src="image/game2/lfa1.png" 	></th>
+                    <th><img id="lfa2"	class="drag-reality"	src="image/game2/lfa2.png" 	></th>
+                    <th><img id="lfa3"	class="drag-reality"	src="image/game2/lfa3.png" 	></th>
+                    <th><img id="lfa4"	class="drag-reality"	src="image/game2/lfa4.png" 	></th>
+                    <th><img id="lfa5"	class="drag-reality"	src="image/game2/lfa5.png" 	></th>
+                    <th><img id="lfb1"	class="drag-reality"	src="image/game2/lfb1.png" 	></th>
+                </tr>
+                <tr>
+                	<th><img id="lfa4"	class="drag-reality"		src="image/game2/lfa4.png" 	></th>
+                    <th><img id="lfa5"	class="drag-reality"		src="image/game2/lfa5.png" 	></th>
+                    <th><img id="lfb1"	class="drag-reality"		src="image/game2/lfb1.png" 	></th>
+                </tr>
+           	</table>-->
+
+<!--            <table align="center">
+            	<tr>
+                	<th><img id="basket_reality"	draggable="false" src="image/game2/basket_reality.png"></th>
+                	<th><img id="basket_school"  	draggable="false" src="image/game2/basket_school.png"></th>
+                </tr>
+            </table>-->    
+            </div>
+        </div>
+        
+	</body>
+</html>

@@ -1,0 +1,91 @@
+@media screen{
+	p
+	{
+		color 			: 	#000000;
+		text-align		:	left;
+		font-size		:	18px;
+		background-image: 	none;
+	} 
+	body	{
+		background-color:	#EFEFEF;
+		
+	}
+	#descri-sec	{
+		padding			:	2px;
+		text-align:start;
+		
+	}
+	
+	#main-sec	{
+		visibility		:	hidden;
+		height			:	500px;
+		width			:	auto;
+		padding			:	20px;
+		background-image:	url(image/game2/bg2_1980.jpg);
+	
+		
+	}
+	#mainGame2	{
+		color			:	#FFFFFF;
+		font-size		:	large;
+		text-align		:	start;
+	
+	}
+	#score_show {
+		padding			:	5px 50px;
+		background		:	rgba(0, 0, 0, 0.5);
+		color			:	#FFFFFF;
+		font-size		:	xx-large;
+		text-align		:	center;	
+	}
+	#timerCount	{
+		padding			:	5px 50px;
+		background		:	rgba(0, 0, 0, 0.5);
+		color			:	#FFFFFF;
+		font-size		:	xx-large;
+		text-align		:	center;
+		
+	}
+	#div_completed {
+		padding			:	5px;
+		background		:	rgba(0, 0, 0, 0.5);
+		color			:	#FFFFFF;
+		font-size		:	xx-large;
+		text-align		:	center;
+		margin			:	0 auto;
+		position		:	absolute;
+		
+	}
+	.drag-reality,.drag-school{
+		width			:	180px;
+		height			:	180px;
+		position		:	absolute;
+		margin-top		:	-10px;
+		
+	}
+	#basket_reality, #basket_school{
+		width			:	250px;
+		height			:	150px;
+		margin-top		:	350px;
+		position		:	absolute;
+		
+	}
+	#div_bt_start {
+		weight			:	auto;
+		text-align		:	center;
+		padding			:	20px;
+		
+	}
+	.button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 15px 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+}

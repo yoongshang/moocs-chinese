@@ -1,0 +1,33 @@
+@media screen and (max-width: 4032px){
+
+	body	{
+		background-color:	#C1E0FF;
+		overflow-x		:	hidden;
+	}
+	
+	#title-sec	{
+		border-radius	: 	5px;
+		background-color: 	#FF383F;
+		color			: 	#FFFFFF;
+		font-size		: 	xx-large;
+		text-align		: 	center;
+		padding			:	20px;
+	}
+	
+	#div-about{
+		border-radius	:	5px;
+		background-color: 	#FFFFFF;
+		font-size		:	large;
+		text-align		:	left;
+		panding			:	300px;
+		
+	}
+	
+	#footer-sec	{
+		border-radius	: 	5px;
+		color			: 	# CCC;
+		text-align		: 	center;
+		pandding		: 	5px;
+	}
+
+}

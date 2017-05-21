@@ -1,0 +1,52 @@
+@media screen and (max-width: 4032px){
+	body	{
+		background-color:	#17425E;
+		overflow-x		:	hidden;
+	}
+	
+	#title-sec	{
+		border-radius	: 	5px;
+		background-color: 	#FF383F;
+		color			: 	#FFFFFF;
+		font-size		: 	xx-large;
+		text-align		: 	center;
+		padding			:	20px;
+	}
+	#game-iframe	{	
+		position		:	initial;
+		text-align		:	center;
+		margin			:	auto;
+		margin-top		:	10px;
+		height			:	10px;
+		visibility		:	hidden;
+	}
+	#imgbt1	{
+		border-radius	: 	10px;
+		background-color: 	#d3e94c;
+		padding			:	20px 50px;
+	}
+	#imgbt2	{
+		border-radius	: 	10px;
+		background-color: 	#d3e94c;
+		padding			:	20px 50px;
+		margin-left		: 	40px;
+	}
+	
+	
+	#bt-sec	{
+		border-radius	: 	5px;
+		background-color:	rgba(0, 0, 0, 0.5);
+		padding			:	150px;
+		text-align		:	center;
+		margin			:	0;
+		
+		
+	}
+	#footer-sec	{
+		border-radius	: 	5px;
+		background-color: 	#A9A9A9;
+		color			: 	# CCC;
+		text-align		: 	center;
+		pandding		: 	5px;
+	}
+}
